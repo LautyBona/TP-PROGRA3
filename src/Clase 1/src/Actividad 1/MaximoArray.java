@@ -1,4 +1,6 @@
-
+/*Complejidad Asintótica
+O(N) porque debemos recorrer cada elemento una vez para asegurarnos de encontrar el máximo.
+*/
 public class MaximoArray{
     public static int encontrarMaximo(int[] array) {
         if (array == null || array.length == 0) {
@@ -14,7 +16,7 @@ public class MaximoArray{
     }
 
     public static void main(String[] args) {
-        int[] numeros = {1,2,3,4,5,-1};
+        int[] numeros = {1,2,3,4,5,-1,-2};
         int maximo = encontrarMaximo(numeros);
         System.out.println("El valor máximo del array es: " + maximo);
     }
