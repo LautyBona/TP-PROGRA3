@@ -11,4 +11,19 @@ public class RedSocial {
     public void agregarUsuario(Usuario usuario){
         usuarios.add(usuario);
     }
+
+    public void mostrarListaDeAdyacencia() {
+        for (Usuario usuario : usuarios) {
+            System.out.print(usuario.getNombre() + " sigue a: ");
+            List<Usuario> seguidos = usuario.getSeguidos();
+            if (seguidos.isEmpty()) {
+                System.out.println("No sigue a nadie.");
+            } else {
+                for (Usuario seguido : seguidos) {
+                    System.out.print(seguido.getNombre() + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
 }
