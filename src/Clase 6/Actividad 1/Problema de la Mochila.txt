@@ -1,0 +1,16 @@
+En el método de fuerza bruta, probamos todas las combinaciones posibles de objetos para ver cuál ofrece el mayor valor sin exceder la capacidad de la mochila.
+
+Combinaciones:
+{ } → Peso = 0, Valor = 0
+{1} → Peso = 3, Valor = 4
+{2} → Peso = 4, Valor = 5
+{3} → Peso = 2, Valor = 3
+{1, 2} → Peso = 7 (No válida, excede capacidad)
+{1, 3} → Peso = 5, Valor = 7 (Válida)
+{2, 3} → Peso = 6, Valor = 8 (Válida)
+{1, 2, 3} → Peso = 9 (No válida)
+La mejor combinación es {2, 3} con un valor de 8.
+
+Con Programación Dinámica El valor máximo es 8, seleccionando los objetos 2 y 3.(Ver imagen adjunta)
+Complejidad : Fuerza Bruta : O(2^n) ya que se prueban todas las combinaciones posibles.
+Programación Dinámica: O(n . P), donde n es el número de objetos y P es la capacidad de la mochila.
