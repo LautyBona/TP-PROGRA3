@@ -1,0 +1,5 @@
+El codigo intenta colocar una reina en cada fila, comenzando desde la primera,
+para cada posicion en una fila, llama a isSafe para verificar si esa posición es seguras, si isSafe devuelve true,
+la reina se coloca en esa posicion, y el algoritmo intenta resolver la siguiente fila, si colocuar una reina lleva a un estado sin solución,
+el algoritmo "retrocede" eliminando la última colocada y probando la siguiente posicion disponible en la fila anterior.
+(python tutor no nos dejo correr el codigo porque era demasiado largo)
