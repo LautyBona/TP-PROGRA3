@@ -32,7 +32,6 @@ public class FloydWarshall {
     }
 
     public static void main(String[] args) {
-        // Inicializar el grafo con tiempos de entrega (en minutos)
         int[][] graf = {
                 {0, 2, INF, 5},
                 {INF, 0, INF, 4},
